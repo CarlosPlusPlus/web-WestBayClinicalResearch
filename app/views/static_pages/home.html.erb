@@ -85,7 +85,8 @@
             </div>
 
             <div class="ls-layer" style="transition2d:5;">
-                <img class="ls-bg" src="img/slides/bg-one.jpg" alt="Slider Background">
+                <!-- <img class="ls-bg" src="img/slides/bg-one.jpg" alt="Slider Background"> -->
+                <%= image_tag "slides/bg-one.jpg", :class => "ls-bg" %>
 
                 <img  class="ls-s-1" src="img/slides/fam_imac.png" alt="iMac" 
                       style="top:50px; left:50px; durationin : 1250; durationout : 1250; delayin : 0;">
@@ -156,7 +157,7 @@
             <div class="row">
                 <div class="showroom-item col-sm-3">
                     <div class="image">
-                        <img src="img/portfolio/port-server.png" class="img-responsive" alt="Portfolio Image">
+                        <%= image_tag "portfolio/port-server.png", :class => "img-responsive" %>
                         <a class="overlay" href="portfolio-inner.html">
                              <i class="glyphicons search"><i></i></i>
                              <div class="name">Server Security</div>
@@ -164,9 +165,8 @@
                     </div>
                 </div>
                 <div class="showroom-item col-sm-3">
-                    <div class="image">
-                        
-                        <img src="img/portfolio/port-code.png" class="img-responsive" alt="Portfolio Image">
+                    <div class="image"> 
+                        <%= image_tag "portfolio/port-code.png", :class => "img-responsive" %>
                         <a class="overlay" href="portfolio-inner.html">
                              <i class="glyphicons search"><i></i></i>
                              <div class="name">Code Review</div>
@@ -175,7 +175,7 @@
                 </div>
                 <div class="showroom-item col-sm-3">
                     <div class="image">
-                        <img src="img/portfolio/port-storage.png" class="img-responsive" alt="Portfolio Image">
+                        <%= image_tag "portfolio/port-storage.png", :class => "img-responsive" %>
                          <a class="overlay" href="portfolio-inner.html">
                              <i class="glyphicons search"><i></i></i>
                              <div class="name">Storage Consulting</div>
@@ -184,7 +184,7 @@
                 </div>                
                 <div class="showroom-item col-sm-3">
                     <div class="image">
-                        <img src="img/portfolio/port-car.png" class="img-responsive" alt="Portfolio Image">  
+                        <%= image_tag "portfolio/port-car.png", :class => "img-responsive" %>  
                          <a class="overlay" href="portfolio-inner.html">
                              <i class="glyphicons search"><i></i></i>
                              <div class="name">Blue Car</div>                         

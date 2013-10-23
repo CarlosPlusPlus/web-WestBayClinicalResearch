@@ -10,12 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ../../../vendor/assets/javascripts/vendor/bootstrap/bootstrap.min.js
+//= require ../../../vendor/assets/javascripts/vendor/modernizr/modernizr.js
 //= require ../../../vendor/assets/javascripts/vendor/layerslider/jquery-easing-1.3.js
 //= require ../../../vendor/assets/javascripts/vendor/layerslider/jquery-transit-modified.js
 //= require ../../../vendor/assets/javascripts/vendor/layerslider/layerslider.kreaturamedia.jquery.js
+//= require ../../../vendor/assets/javascripts/vendor/layerslider/layerslider.transitions.js
 //= require ../../../vendor/assets/javascripts/grove-slider.js
-//= require ../../../vendor/assets/javascripts/vendor/bootstrap/bootstrap.min.js
-//= require ../../../vendor/assets/javascripts/vendor/modernizr/modernizr.js
