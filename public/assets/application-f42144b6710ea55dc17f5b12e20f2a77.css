@@ -10683,7 +10683,7 @@ footer .indent30 {
     float: none;
     top: inherit;
     left: inherit;
-    margin: ;
+    margin: 0px;
     background-color: transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -10754,9 +10754,9 @@ footer .indent30 {
   border-color: rgba(118, 148, 167, 0.5);
   outline: 0;
   outline: none;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px @form-focus-border;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px @form-focus-border;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px @form-focus-border;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px;
 }
 label {
   font-weight: normal;
@@ -11296,18 +11296,18 @@ div.our-clients .clients .client .img-responsive {
   -webkit-border-top-left-radius: 2px;
   -moz-border-radius-topleft: 2px;
   border-top-left-radius: 2px;
-  -webkit-box-shadow: 0 1px 1px -1px @gradient-one-shadow;
-  -moz-box-shadow: 0 1px 1px -1px @gradient-one-shadow;
-  box-shadow: 0 1px 1px -1px @gradient-one-shadow;
+  -webkit-box-shadow: 0 1px 1px -1px;
+  -moz-box-shadow: 0 1px 1px -1px;
+  box-shadow: 0 1px 1px -1px;
 }
 .pricing-plan .head.alternative,
 .product-comparison .head.alternative {
   background-color: #f3f2f2;
   background-image: linear-gradient(to bottom, #f3f2f2, #e5e3e3);
   color: #6f6f6f;
-  -webkit-box-shadow: 0 1px 1px -1px @pricing-head-shadow;
-  -moz-box-shadow: 0 1px 1px -1px @pricing-head-shadow;
-  box-shadow: 0 1px 1px -1px @pricing-head-shadow;
+  -webkit-box-shadow: 0 1px 1px -1px;
+  -moz-box-shadow: 0 1px 1px -1px;
+  box-shadow: 0 1px 1px -1px;
 }
 .pricing-plan .head.alternative .ribbon,
 .product-comparison .head.alternative .ribbon {
