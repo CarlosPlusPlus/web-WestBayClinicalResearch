@@ -43,3 +43,16 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#########################
+# PROJECT SPECIFIC GEMS #
+#########################
+
+gem 'jquery-ui-rails'				# => Allows for jQuery in Rails.
+
+group :development do
+	gem 'webrick'						  # => Prevents warning when running rails s.
+  gem 'better_errors'       # => Display better errors for debugging
+  gem 'binding_of_caller'   # => Shows in-line console with better_errors.
+  gem 'pry-debugger'        # => Tool used for Ruby / Rails debug.
+end
