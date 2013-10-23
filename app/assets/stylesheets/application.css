@@ -9,6 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree ../../../vendor/assets/stylesheets/
- *= require_tree .
+ *= require ../../../vendor/assets/stylesheets/vendor/bootstrap/bootstrap.css
+ *= require ../../../vendor/assets/stylesheets/vendor/glyphicons/glyphicons.css
+ *= require ../../../vendor/assets/stylesheets/vendor/google/google_fonts.css
+ *= require ../../../vendor/assets/stylesheets/vendor/layerslider/layerslider.css
+ *= require ../../../vendor/assets/stylesheets/styles-blue.css
  */
