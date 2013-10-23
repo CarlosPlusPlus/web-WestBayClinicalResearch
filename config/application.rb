@@ -21,6 +21,7 @@ module WebWestbayclinicalresearch
     # config.i18n.default_locale = :de
 
     config.assets.paths << "#{Rails.root}/vendor/assets/fonts/"
+    config.assets.paths << "#{Rails.root}/vendor/assets/images/"
 
   end
 end
