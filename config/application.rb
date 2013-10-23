@@ -23,5 +23,6 @@ module WebWestbayclinicalresearch
     config.assets.paths << "#{Rails.root}/vendor/assets/fonts/"
     config.assets.paths << "#{Rails.root}/vendor/assets/images/"
 
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
