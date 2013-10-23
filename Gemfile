@@ -48,7 +48,10 @@ end
 # PROJECT SPECIFIC GEMS #
 #########################
 
-gem 'jquery-ui-rails'				# => Allows for jQuery in Rails.
+gem 'jquery-ui-rails'					# => Allows for jQuery in Rails.
+gem "therubyracer"						# => Manipulation of JavaScript with Rails.
+gem "less-rails"							# => Allows for LESS (pre)compilation.
+gem "twitter-bootstrap-rails"	# => Twitter bootstrap for Rails.
 
 group :development do
 	gem 'webrick'						  # => Prevents warning when running rails s.
