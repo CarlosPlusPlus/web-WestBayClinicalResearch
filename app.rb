@@ -21,7 +21,7 @@ module WBCR
     # Routes
     # => define controller actions for application.
     get '/' do
-      erb :index
+      erb :'static/index'
     end
 
     # Helpers
