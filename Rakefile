@@ -1,6 +1,9 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+# Add rake tasks here.
+# They can also be added in the ./tasks folder.
 
-require File.expand_path('../config/application', __FILE__)
+require "sinatra/activerecord/rake"
+require "./app"
 
-WebWestbayclinicalresearch::Application.load_tasks
+Dir.glob("./tasks/*.rb").each do |file|
+  require file
+end
