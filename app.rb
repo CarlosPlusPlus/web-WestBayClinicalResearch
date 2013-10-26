@@ -5,9 +5,7 @@ Bundler.require
 # Include all models in lib/*/ folders.
 require_relative 'environment'
 
-# Rename 'AppName' to name of choice.
-# => Don't forget to update config.ru as well.
-module AppName
+module WBCR
   class App < Sinatra::Application
 
     # Configure Options
@@ -16,10 +14,6 @@ module AppName
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public'
     end
-
-    # Database
-    # => delete if not needed.
-    # set :database, "sqlite3:///database.db"
 
     # Filters
     # => add route filters if necessary.
