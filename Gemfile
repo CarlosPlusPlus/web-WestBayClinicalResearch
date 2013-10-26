@@ -1,17 +1,11 @@
 source "https://rubygems.org"
-
+ruby "2.0.0"
 
 gem "sinatra"
-gem "activerecord"
-gem "sinatra-activerecord"
 gem "rake"
 
-group :debug do
-	gem "better_errors"
-	gem "debugger"
-end
-
 group :development do
+  gem "pry-debugger"
   gem "shotgun"
   gem "tux"
 end
