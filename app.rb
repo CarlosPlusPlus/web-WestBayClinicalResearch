@@ -24,6 +24,10 @@ module WBCR
       erb :'static/index'
     end
 
+    get '/original' do
+      erb :'static/original'
+    end
+
     # Helpers
     # => define helper methods for application.
     helpers do
