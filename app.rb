@@ -9,31 +9,38 @@ module WBCR
   class App < Sinatra::Application
 
     # Configure Options
-    # => set default paths of application.
+
     configure do
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public'
     end
 
-    # Filters
-    # => add route filters if necessary.
+    # CONTROLLER: Static Pages
 
-    # Routes
-    # => define controller actions for application.
     get '/' do
       erb :'static/index'
     end
 
-    get '/original' do
+    get '/original' do        # Remove for PROD.
       erb :'static/original'
     end
 
+    # CONTROLLER: Test Pages
+
+    get '/hubspot' do         # Remove for PROD.
+      erb :'test/hubspot'
+    end
+
+    get '/webdev' do          # Remove for PROD.
+      erb :'test/webdev'
+    end
+
     # Helpers
-    # => define helper methods for application.
     helpers do
       def partial(file_name)
         erb file_name, :layout => false
       end
     end
+    
   end
 end
