@@ -37,7 +37,7 @@ module WBCR
     # ==> Remove for PROD.
 
     get '/original' do
-      erb :'static/original'
+      erb :'test/original'
     end
 
     get '/hubspot' do 
