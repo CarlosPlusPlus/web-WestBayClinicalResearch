@@ -23,7 +23,7 @@ $('document').ready(function(){
       hoverPrevNext           : true,
       hoverBottomNav          : false,
       skin                    : 'grove',
-      skinsPath               : 'css/vendor/layerslider/skins/',
+      skinsPath               : '_grove/css/vendor/layerslider/skins/',
       pauseOnHover            : true,
       globalBGColor           : 'transparent',
       globalBGImage           : false,
