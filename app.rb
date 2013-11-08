@@ -21,17 +21,30 @@ module WBCR
       erb :'static/index'
     end
 
-    get '/original' do        # Remove for PROD.
-      erb :'static/original'
+    get '/facility' do
+      erb :'static/facility'
+    end
+
+    get '/services' do
+      erb :'static/services'
+    end
+
+    get '/team' do
+      erb :'static/team'
     end
 
     # CONTROLLER: Test Pages
+    # ==> Remove for PROD.
 
-    get '/hubspot' do         # Remove for PROD.
+    get '/original' do
+      erb :'static/original'
+    end
+
+    get '/hubspot' do 
       erb :'test/hubspot'
     end
 
-    get '/webdev' do          # Remove for PROD.
+    get '/webdev' do  
       erb :'test/webdev'
     end
 
