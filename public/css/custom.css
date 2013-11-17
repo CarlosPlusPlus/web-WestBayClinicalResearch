@@ -2,7 +2,7 @@
 	text-align: center;
 }
 
-/* INDEX: Header modifications.*/
+/* INDEX: Header modifications */
 
 div.pagetitle {
 	padding: 5px;
@@ -14,4 +14,10 @@ div.pagetitle h1 {
   font-weight: bold;
   font-variant:small-caps;
   float: none;
+}
+
+/* Button modifications */
+
+.cta-div {
+    padding: 20% 0;
 }
