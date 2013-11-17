@@ -1,3 +1,15 @@
 .center {
 	text-align: center;
 }
+
+div.pagetitle {
+	padding: 5px;
+}
+
+div.pagetitle h1 {
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-variant:small-caps;
+  float: none;
+}
