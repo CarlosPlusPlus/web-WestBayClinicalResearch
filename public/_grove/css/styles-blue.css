@@ -840,6 +840,7 @@ div.showroom-controls a:hover {
   left: 0;
   right: 0px;
   top: 0px;
+  width: 250px;
   bottom: 0;
   opacity: 0;
   display: hidden;
