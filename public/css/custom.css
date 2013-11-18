@@ -2,6 +2,11 @@
 	text-align: center;
 }
 
+.container.content {	
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /* INDEX: Header modifications */
 
 div.pagetitle {
@@ -15,6 +20,8 @@ div.pagetitle h1 {
   font-variant:small-caps;
   float: none;
 }
+
+
 
 /* Button modifications */
 
