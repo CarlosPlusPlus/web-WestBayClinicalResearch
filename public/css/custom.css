@@ -1,11 +1,18 @@
+/*****************/
+/* COMMON STYLES */
+/*****************/
 
-/***************/
-/* Page: INDEX */
-/***************/
+.bold {
+	font-weight: bolder;
+}
 
 .center {
 	text-align: center;
 }
+
+/***************/
+/* Page: INDEX */
+/***************/
 
 .container.content {	
   padding-top: 15px;

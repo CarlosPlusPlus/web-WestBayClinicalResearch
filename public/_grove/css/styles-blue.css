@@ -152,15 +152,16 @@ div.pagetitle h1 span.category {
 .copyright {
   color: #4f5c68;
   background-color: #1c242c;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
   padding: 7px 0 7px 11px;
 }
 .copyright p {
   margin: 0;
 }
 footer {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 20px;
 }
 footer h4 {
