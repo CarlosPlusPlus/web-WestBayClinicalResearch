@@ -14,9 +14,14 @@
   font-variant:small-caps;
 }
 
-div.links.heading {
+div.links.link-heading {
   font-size: 30px;
   font-variant: small-caps;
+}
+
+div.row.row-padding {
+  padding-top:    20px;
+  padding-bottom: 20px;
 }
 
 /***************/
