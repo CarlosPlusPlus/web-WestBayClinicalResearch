@@ -1,21 +1,15 @@
-# Require all Ruby gems located in Gemfile.
 require 'bundler'
 Bundler.require
 
-# Include all models in lib/*/ folders.
 require_relative 'environment'
 
 module WBCR
   class App < Sinatra::Application
 
-    # Configure Options
-
     configure do
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public'
     end
-
-    # CONTROLLER: Static Pages
 
     get '/' do
       erb :'static/index'
