@@ -44,8 +44,14 @@ module WBCR
 
     # Helpers
     helpers do
+      # ==> Enable partials in all templates.
       def partial(file_name)
         erb file_name, :layout => false
+      end
+
+      def h(text)
+        # ==> Capability to escape HTML.
+        Rack::Utils.escape_html(text)
       end
     end
     
