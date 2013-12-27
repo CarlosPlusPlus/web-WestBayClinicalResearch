@@ -15,20 +15,20 @@ module WBCR
     # Route Definitions #
     #####################
 
-    # Index 
+    # Home Page 
     get '/' do
-      erb :'static/index'
+      erb :index
     end
 
     # Learn More
     # => Facility, Team
-    get '/learnmore/:page' do
-      erb "static/#{params[:page]}".to_sym
+    get '/learnmore/:subpage' do
+      erb "learnmore/#{params[:subpage]}".to_sym
     end
 
     # Contact
-    get '/contact' do
-      erb :'static/contact'
+    get '/:staticpage' do
+      erb params[:staticpage].to_sym
     end
     
     # Test Pages [REMOVE FOR PROD]
