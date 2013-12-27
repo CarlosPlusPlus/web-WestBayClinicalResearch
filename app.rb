@@ -11,15 +11,24 @@ module WBCR
       set :public_folder, 'public'
     end
 
+    #####################
+    # Route Definitions #
+    #####################
+
     # Index 
     get '/' do
       erb :'static/index'
     end
 
     # Learn More
-    # => Contact Us, Facility, Team
+    # => Facility, Team
     get '/learnmore/:page' do
       erb "static/#{params[:page]}".to_sym
+    end
+
+    # Contact
+    get '/contact' do
+      erb :'static/contact'
     end
     
     # Test Pages [REMOVE FOR PROD]
@@ -28,7 +37,10 @@ module WBCR
       erb "test/#{params[:page]}".to_sym
     end
 
-    # Helper Functions
+    ####################
+    # Helper Functions #
+    ####################
+
     helpers do
       # ==> Enable partials in all templates.
       def partial(file_name)
