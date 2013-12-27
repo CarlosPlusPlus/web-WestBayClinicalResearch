@@ -49,6 +49,12 @@ module WBCR
         erb file_name, :layout => false
       end
 
+      def link_to(url,text=url,opts={})
+        attributes = ""
+        opts.each { |key,val| attributes << key.to_s << "=\"" << val << "\" "}
+        "<a href=\"#{url}\" #{attributes}>#{text}</a>"
+      end
+
       def h(text)
         # ==> Capability to escape HTML.
         Rack::Utils.escape_html(text)
