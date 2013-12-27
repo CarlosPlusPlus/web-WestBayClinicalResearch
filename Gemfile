@@ -1,15 +1,27 @@
-source "https://rubygems.org"
-ruby "2.0.0"
+source 'https://rubygems.org'
 
-gem "sinatra"
-gem "rake"
+gem 'sinatra'								# Core Sinatra library.
+gem 'sinatra-contrib'				# Allow for Reloader.
 
-group :development do
-  gem "pry-debugger"
-  gem "shotgun"
-  gem "tux"
+gem 'activerecord'					# ActiveRecord capability.
+gem 'sinatra-activerecord'
+gem 'sinatra-flash'					# Sinatra flash capability.
+gem 'sinatra-redirect-with-flash'
+gem 'rake'									# Rake task support.
+
+group :development, :test do
+	gem 'sqlite3'							# SQLite3 support.
+	gem 'tux'									# CLI for models/methods.
+
+	gem 'better_errors'				# Better error output.
+	gem 'binding_of_caller'		# CLI error output.
+	gem 'pry-debugger'				# Ruby debugger.
+  
+  gem 'capybara'						# Integration testing.
+  gem 'factory_girl'				# Test tool for factories.
+	gem 'rspec'								# Ruby testing framework.
 end
 
-group :test do  
-  gem "rspec"
+group :production do
+	gem 'pg'
 end
