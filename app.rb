@@ -27,6 +27,15 @@ module WBCR
       erb :'static/team'
     end
 
+    ############################################
+    # ==> Want to make top templates MORE META #
+    ############################################
+
+    # This is failing to load CSS @ /learmore/team
+    get '/learnmore/:page' do
+      erb "static/#{params[:page]}".to_sym
+    end
+    
     # CONTROLLER: Test Pages
     # ==> Remove for PROD.
 
