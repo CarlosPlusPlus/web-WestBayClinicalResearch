@@ -22,20 +22,22 @@ module WBCR
 
     # Learn More
     # => Facility, Team
-    get '/learnmore/:subpage' do
+    get '/learnmore/:subpage/?' do
       erb "learnmore/#{params[:subpage]}".to_sym
     end
 
     # Contact
-    get '/:staticpage' do
+    get '/:staticpage/?' do
       erb params[:staticpage].to_sym
     end
     
-    # Test Pages [REMOVE FOR PROD]
+    # Test Pages [TODO: Remove for Prod]
     # => Original, Hubspot, WebDev
-    get '/test/:page' do
+    get '/test/:page/?' do
       erb "test/#{params[:page]}".to_sym
     end
+
+    # TODO: 404 Page for invalid routes?
 
     ####################
     # Helper Functions #
