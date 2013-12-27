@@ -11,27 +11,14 @@ module WBCR
       set :public_folder, 'public'
     end
 
+    # Index 
     get '/' do
       erb :'static/index'
     end
 
-    get '/facility' do
-      erb :'static/facility'
-    end
+    # Learn More
+    # => Contact Us, Facility/Services, Team
 
-    get '/services' do
-      erb :'static/services'
-    end
-
-    get '/team' do
-      erb :'static/team'
-    end
-
-    ############################################
-    # ==> Want to make top templates MORE META #
-    ############################################
-
-    # This is failing to load CSS @ /learmore/team
     get '/learnmore/:page' do
       erb "static/#{params[:page]}".to_sym
     end
