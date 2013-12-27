@@ -17,28 +17,18 @@ module WBCR
     end
 
     # Learn More
-    # => Contact Us, Facility/Services, Team
-
+    # => Contact Us, Facility, Team
     get '/learnmore/:page' do
       erb "static/#{params[:page]}".to_sym
     end
     
-    # CONTROLLER: Test Pages
-    # ==> Remove for PROD.
-
-    get '/original' do
-      erb :'test/original'
+    # Test Pages [REMOVE FOR PROD]
+    # => Original, Hubspot, WebDev
+    get '/test/:page' do
+      erb "test/#{params[:page]}".to_sym
     end
 
-    get '/hubspot' do 
-      erb :'test/hubspot'
-    end
-
-    get '/webdev' do  
-      erb :'test/webdev'
-    end
-
-    # Helpers
+    # Helper Functions
     helpers do
       # ==> Enable partials in all templates.
       def partial(file_name)
