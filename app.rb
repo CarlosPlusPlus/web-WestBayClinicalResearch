@@ -17,6 +17,7 @@ module WBCR
 
     MAIN_MENU  = %w(contact)
     LEARN_MORE = %w(facility team)
+    TEST_PAGES = %w(hubspot original webdev)
 
     # Home Page 
     get '/' do
@@ -29,7 +30,7 @@ module WBCR
         erb "#{page}".to_sym
       end
     end
-    
+
     # Learn More
     LEARN_MORE.each do |page|
       get "/learnmore/#{page}/?" do
@@ -37,10 +38,12 @@ module WBCR
       end
     end
     
-    # Test Pages [TODO: Remove for Prod]
-    # => Original, Hubspot, WebDev
-    get '/test/:page/?' do
-      erb "test/#{params[:page]}".to_sym
+    # Test Pages
+    # => TODO: Remove for Prod
+    TEST_PAGES.each do |page|
+      get "/test/#{page}/?" do
+        erb "test/#{page}".to_sym
+      end
     end
 
     # Custom 404 page for unknown routes.
