@@ -17,7 +17,6 @@ module WBCR
 
     MAIN_MENU  = %w(contact)
     LEARN_MORE = %w(facility team)
-
     TEST_PAGES = %w(hubspot original webdev)
 
     # Home Page 
