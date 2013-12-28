@@ -24,6 +24,7 @@ module WBCR
       erb :index
     end
 
+    # GET Requests
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
         erb "#{page}".to_sym
@@ -42,6 +43,8 @@ module WBCR
         erb "test/#{page}".to_sym
       end
     end
+
+    # POST Requests
 
     # => TODO: Implement Custom 404 page.
     # =======> Redirect to Home Page (JS?)
