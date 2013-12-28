@@ -21,14 +21,15 @@ module WBCR
     end
 
     # Learn More
-    # => Facility, Team
-    get '/learnmore/:subpage/?' do
-      erb "learnmore/#{params[:subpage]}".to_sym
+    %w(facility team).each do |page|
+      get "/learnmore/#{page}/?" do
+        erb "learnmore/#{page}".to_sym
+      end
     end
 
     # Contact
     get '/:staticpage/?' do
-      erb params[:staticpage].to_sym
+      erb params[:staticpage].to_sym 
     end
     
     # Test Pages [TODO: Remove for Prod]
@@ -38,6 +39,14 @@ module WBCR
     end
 
     # TODO: 404 Page for invalid routes?
+
+    not_found do
+      'This is nowhere to be found.'
+    end
+
+    error do
+      'This is nowhere to be found.'
+    end
 
     ####################
     # Helper Functions #
