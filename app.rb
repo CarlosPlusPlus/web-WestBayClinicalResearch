@@ -15,21 +15,26 @@ module WBCR
     # Route Definitions #
     #####################
 
+    MAIN_MENU  = %w(contact)
+    LEARN_MORE = %w(facility team)
+
     # Home Page 
     get '/' do
       erb :index
     end
 
+    # Main Menu
+    MAIN_MENU.each do |page|
+      get "/#{page}/?" do
+        erb "#{page}".to_sym
+      end
+    end
+    
     # Learn More
-    %w(facility team).each do |page|
+    LEARN_MORE.each do |page|
       get "/learnmore/#{page}/?" do
         erb "learnmore/#{page}".to_sym
       end
-    end
-
-    # Contact
-    get '/:staticpage/?' do
-      erb params[:staticpage].to_sym 
     end
     
     # Test Pages [TODO: Remove for Prod]
@@ -38,14 +43,10 @@ module WBCR
       erb "test/#{params[:page]}".to_sym
     end
 
-    # TODO: 404 Page for invalid routes?
-
+    # Custom 404 page for unknown routes.
+    # => TODO: Implement Custom 404 page.
     not_found do
-      'This is nowhere to be found.'
-    end
-
-    error do
-      'This is nowhere to be found.'
+      'PAGE HAS NOT BEEN FOUND.'
     end
 
     ####################
@@ -53,9 +54,8 @@ module WBCR
     ####################
 
     helpers do
-      # ==> Enable partials in all templates.
-      def partial(file_name)
-        erb file_name, :layout => false
+      def h(text)
+        Rack::Utils.escape_html(text)
       end
 
       def link_to(url,text=url,opts={})
@@ -64,9 +64,8 @@ module WBCR
         "<a href=\"#{url}\" #{attributes}>#{text}</a>"
       end
 
-      def h(text)
-        # ==> Capability to escape HTML.
-        Rack::Utils.escape_html(text)
+      def partial(file_name)
+        erb file_name, :layout => false
       end
     end
     
