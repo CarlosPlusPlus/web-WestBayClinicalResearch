@@ -17,6 +17,7 @@ module WBCR
 
     MAIN_MENU  = %w(contact)
     LEARN_MORE = %w(facility team)
+
     TEST_PAGES = %w(hubspot original webdev)
 
     # Home Page 
@@ -24,21 +25,18 @@ module WBCR
       erb :index
     end
 
-    # Main Menu
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
         erb "#{page}".to_sym
       end
     end
 
-    # Learn More
     LEARN_MORE.each do |page|
       get "/learnmore/#{page}/?" do
         erb "learnmore/#{page}".to_sym
       end
     end
     
-    # Test Pages
     # => TODO: Remove for Prod
     TEST_PAGES.each do |page|
       get "/test/#{page}/?" do
@@ -46,8 +44,8 @@ module WBCR
       end
     end
 
-    # Custom 404 page for unknown routes.
     # => TODO: Implement Custom 404 page.
+    # =======> Redirect to Home Page (JS?)
     not_found do
       'PAGE HAS NOT BEEN FOUND.'
     end
