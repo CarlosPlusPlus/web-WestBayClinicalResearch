@@ -36,6 +36,8 @@ module WBCR
         erb "learnmore/#{page}".to_sym
       end
     end
+
+    # POST Requests
     
     # => TODO: Remove for Prod
     TEST_PAGES.each do |page|
@@ -43,8 +45,6 @@ module WBCR
         erb "test/#{page}".to_sym
       end
     end
-
-    # POST Requests
 
     # => TODO: Implement Custom 404 page.
     # =======> Redirect to Home Page (JS?)
