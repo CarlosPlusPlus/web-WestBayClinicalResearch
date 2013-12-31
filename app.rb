@@ -61,7 +61,7 @@ module WBCR
         Rack::Utils.escape_html(text)
       end
 
-      def link_to(url,text=url,opts={})
+      def link_to(url, text = url, opts = {})
         attributes = ""
         opts.each { |key,val| attributes << key.to_s << "=\"" << val << "\" "}
         "<a href=\"#{url}\" #{attributes}>#{text}</a>"
