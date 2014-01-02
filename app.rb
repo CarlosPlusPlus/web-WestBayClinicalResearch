@@ -49,7 +49,7 @@ module WBCR
     # => TODO: Implement Custom 404 page.
     # =======> Redirect to Home Page (JS?)
     not_found do
-      'PAGE HAS NOT BEEN FOUND.'
+      erb "404".to_sym
     end
 
     ####################
