@@ -42,7 +42,15 @@
   <body>
 
     <%= partial(:'layout/header') %>
-    <%= yield %>
+
+    <% if @index %>
+      <%= yield %>
+    <% else %>
+      <div class="container content">
+        <%= yield %>
+      </div>
+    <% end %>
+
     <%= partial(:'layout/footer') %>
     
     <!-- ******************************************** -->

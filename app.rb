@@ -21,6 +21,7 @@ module WBCR
 
     # Home Page 
     get '/' do
+      @index = true
       erb :index
     end
 
