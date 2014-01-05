@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'sinatra'								# Core Sinatra library.
 gem 'sinatra-contrib'				# Allow for Reloader.
