@@ -11,6 +11,7 @@ gem 'sinatra-redirect-with-flash'
 gem 'rake'									# Rake task support.
 
 group :development, :test do
+	gem 'sqlite3'							# SQLite3 in development.
 	gem 'tux'									# CLI for models/methods.
 
 	gem 'better_errors'				# Better error output.
@@ -20,4 +21,8 @@ group :development, :test do
   gem 'capybara'						# Integration testing.
   gem 'factory_girl'				# Test tool for factories.
 	gem 'rspec'								# Ruby testing framework.
+end
+
+group :production do
+	gem 'pg'									# PostgreSQL in production.
 end
