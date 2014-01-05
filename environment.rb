@@ -5,7 +5,7 @@ require './config/authentication' if File.exists?('./config/authentication.rb')
 require 'sinatra/base'
 require 'sinatra/reloader'
 
-# ==> Include debug capabilities in development.
+# Include debug capabilities in development.
 configure :development do
   require 'better_errors'
   require 'binding_of_caller'
@@ -16,6 +16,25 @@ configure :development do
 
   register Sinatra::Reloader
   also_reload 'lib/*/*.rb'
+end
+
+# Include database settings.
+configure :development do
+ set :database, 'sqlite:///dev.db'
+ set :show_exceptions, true
+end
+
+configure :production do
+ db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
+
+ ActiveRecord::Base.establish_connection(
+   :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+   :host     => db.host,
+   :username => db.user,
+   :password => db.password,
+   :database => db.path[1..-1],
+   :encoding => 'utf8'
+ )
 end
 
 # Include all models (.rb files) in /lib/*/
