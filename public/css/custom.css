@@ -10,6 +10,10 @@
 	text-align: center;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .justify {
   text-align: justify;
   direction: ltr;
@@ -67,11 +71,6 @@
   padding-top: 30px;
 }
 
-.panel {
-  border: 2px solid;
-  border-color: gray;
-}
-
 div.links.link-heading {
   font-size: 30px;
   font-variant: small-caps;
@@ -109,4 +108,21 @@ div.pagetitle h1 {
 
 .cta-div {
     padding: 10% 0;
+}
+
+/*****************/
+/* Page: CONTACT */
+/*****************/
+
+address {
+  margin-bottom: 10px;
+}
+
+.contact-margin {
+  margin-top: 20px;
+}
+
+.contact-panel {
+  border: 2px solid;
+  border-color: gray;
 }
