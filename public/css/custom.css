@@ -10,6 +10,11 @@
 	text-align: center;
 }
 
+.justify {
+  text-align: justify;
+  direction: ltr;
+}
+
 .small-caps {
   font-variant:small-caps;
 }
