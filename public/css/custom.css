@@ -19,6 +19,42 @@
   font-variant:small-caps;
 }
 
+.padding-b10 {
+  padding-bottom: 10px;
+}
+
+.padding-b20 {
+  padding-bottom: 20px;
+}
+
+.padding-b30 {
+  padding-bottom: 30px;
+}
+
+.padding-l10 {
+  padding-left: 10px;
+}
+
+.padding-l20 {
+  padding-left: 20px;
+}
+
+.padding-l30 {
+  padding-left: 30px;
+}
+
+.padding-r10 {
+  padding-right: 10px;
+}
+
+.padding-r20 {
+  padding-right: 20px;
+}
+
+.padding-r30 {
+  padding-right: 30px;
+}
+
 .padding-t10 {
   padding-top: 10px;
 }
