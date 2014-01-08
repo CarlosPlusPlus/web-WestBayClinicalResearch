@@ -15,9 +15,11 @@ module WBCR
     # Route Definitions #
     #####################
 
-    MAIN_MENU  = %w(contact)
+    MAIN_MENU  = %w(blog contact)
     LEARN_MORE = %w(facility team)
+    TRIALS     = %w(information sponsor volunteer)
     TEST_PAGES = %w(hubspot original webdev)
+
 
     # Home Page 
     get '/' do
@@ -38,7 +40,11 @@ module WBCR
       end
     end
 
-    # POST Requests
+    TRIALS.each do |page|
+      get "/trial/#{page}/?" do
+        erb "trial/#{page}".to_sym
+      end
+    end
     
     # => TODO: Remove for Prod
     TEST_PAGES.each do |page|
