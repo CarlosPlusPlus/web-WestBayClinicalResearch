@@ -38,20 +38,15 @@
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">Trials<b class="caret"></b></a>
               <ul class = "dropdown-menu">
-                <li><a href ="#">Current</a></li>
-                <li><a href ="#">Previous</a></li>
-                <li><a href ="#">Sponsors</a></li>
-                <li><a href ="#">Participants</a></li>
+                <li><%= link_to("/trial/information", "Trial Information") %></li>
+                <li><%= link_to("/trial/sponsor", "Sponsor a Trial") %></li>
+                <li><%= link_to("/trial/volunteer", "Volunteer for a Trial") %></li>
               </ul>
             </li>
 
             <li>
-              <a href="#">Contact Us</a>
+              <li><%= link_to("/contact", "Contact Us") %></li>
             </li>
-
-            <li>
-              <a href="#">FAQ</a>
-            </li>     
 
           </ul>        
       </div>
