@@ -110,6 +110,12 @@ div.pagetitle h1 {
     padding: 10% 0;
 }
 
+
+td#facility {
+  border-top-width: 0px;
+  padding: 4px;
+}
+
 /*****************/
 /* Page: CONTACT */
 /*****************/
@@ -125,4 +131,13 @@ address {
 .contact-panel {
   border: 2px solid;
   border-color: gray;
+}
+
+/******************/
+/* Page: FACILITY */
+/******************/
+
+.table-heading {
+  font-size: 20px;
+  font-variant: small-caps;
 }
