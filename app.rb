@@ -15,7 +15,7 @@ module WBCR
     # Route Definitions #
     #####################
 
-    MAIN_MENU  = %w(blog contact)
+    MAIN_MENU  = %w(blog contact faq)
     LEARN_MORE = %w(facility team)
     TRIALS     = %w(information sponsor volunteer)
     TEST_PAGES = %w(hubspot original webdev)
