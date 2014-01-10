@@ -11,7 +11,7 @@ module Sinatra
         js << args
         js << @js if @js
         js.flatten.uniq.map do |script| 
-          "<script src=\"#{script}\"></script>"
+          "<script src=\"/js/#{script}.js\"></script>"
         end.join
       end
   end
