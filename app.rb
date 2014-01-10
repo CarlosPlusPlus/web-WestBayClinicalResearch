@@ -20,7 +20,6 @@ module WBCR
     TRIALS     = %w(information sponsor volunteer)
     TEST_PAGES = %w(hubspot original webdev)
 
-
     # Home Page 
     get '/' do
       @index = true
