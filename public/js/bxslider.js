@@ -1,6 +1,6 @@
 // BxSlider for Facility Page
 
-$( document ).ready(function() {
+$( function() {
   $('.bxslider').bxSlider({
     minSlides: 3,
     maxSlides: 3,
