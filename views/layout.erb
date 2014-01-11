@@ -67,9 +67,9 @@
 
     <%= partial(:'layout/footer') %>
 
-    <!-- Load jQuery onto webpages. -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    
+    <!-- Load Custom JavaScript -->
+    <%= javascripts %>
+
     <!-- ******************************************** -->
     <!-- Load all required JavaScript for Grove Theme -->
     <!-- ******************************************** -->
@@ -102,9 +102,6 @@
       })(document,"script","hs-analytics",300000);
     </script>
     <!-- End of Async HubSpot Analytics Code -->
-
-    <!-- Load Custom JavaScript -->
-    <%= javascripts %>
 
   </body>
 </html>

@@ -11,6 +11,8 @@ module WBCR
       set :public_folder, 'public'
     end
 
+    set :javascripts, [:jquery]
+
     #####################
     # Route Definitions #
     #####################
