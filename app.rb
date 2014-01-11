@@ -17,7 +17,7 @@ module WBCR
     # Route Definitions #
     #####################
 
-    MAIN_MENU  = %w(blog contact faq)
+    MAIN_MENU  = %w(blog contact faq thankyou)
     LEARN_MORE = %w(facility team)
     TRIALS     = %w(information sponsor volunteer)
     TEST_PAGES = %w(hubspot original webdev)
@@ -31,6 +31,7 @@ module WBCR
     # GET Requests
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
+        @action = params[:action] if page == 'thankyou'
         erb "#{page}".to_sym
       end
     end
@@ -66,6 +67,10 @@ module WBCR
     ####################
 
     helpers do
+      def domain
+        request.host_with_port
+      end
+
       def h(text)
         Rack::Utils.escape_html(text)
       end
