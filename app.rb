@@ -18,7 +18,7 @@ module WBCR
     #####################
 
     MAIN_MENU  = %w(blog contact faq thankyou)
-    LEARN_MORE = %w(facility team)
+    LEARN_MORE = %w(about facility)
     TRIALS     = %w(information sponsor volunteer)
     TEST_PAGES = %w(hubspot original webdev)
 
