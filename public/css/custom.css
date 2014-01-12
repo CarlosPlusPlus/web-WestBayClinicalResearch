@@ -147,6 +147,10 @@ span.skills {
   font-variant: small-caps;
 }
 
+td#facility {
+  width: 50%;
+}
+
 /*****************/
 /* Page: CONTACT */
 /*****************/
