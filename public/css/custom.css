@@ -81,6 +81,14 @@ div.row.row-padding {
   padding-bottom: 20px;
 }
 
+/****************/
+/* Page: HEADER */
+/****************/
+
+.grove-navbar {
+  margin-bottom: 20px;
+}
+
 /***************/
 /* Page: INDEX */
 /***************/
