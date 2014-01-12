@@ -116,6 +116,20 @@ td#facility {
   padding: 4px;
 }
 
+/***************/
+/* Page: ABOUT */
+/***************/
+
+h3.skills {
+  margin-bottom: 0px;
+}
+
+span.skills {
+  margin-left: 2.5em;
+  font-style: italic;
+  opacity: 0.65;
+}
+
 /******************/
 /* Page: FACILITY */
 /******************/
