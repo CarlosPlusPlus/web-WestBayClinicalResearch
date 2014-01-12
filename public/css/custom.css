@@ -116,6 +116,15 @@ td#facility {
   padding: 4px;
 }
 
+/******************/
+/* Page: FACILITY */
+/******************/
+
+.table-heading {
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
 /*****************/
 /* Page: CONTACT */
 /*****************/
@@ -131,13 +140,4 @@ address {
 .contact-panel {
   border: 2px solid;
   border-color: gray;
-}
-
-/******************/
-/* Page: FACILITY */
-/******************/
-
-.table-heading {
-  font-size: 20px;
-  font-variant: small-caps;
 }
