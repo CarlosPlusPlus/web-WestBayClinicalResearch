@@ -37,7 +37,7 @@ module WBCR
 
     LEARN_MORE.each do |page|
       get "/learnmore/#{page}/?" do
-        js 'bxslider'
+        js 'bxslider' if page == 'facility'
         erb "learnmore/#{page}".to_sym
       end
     end
