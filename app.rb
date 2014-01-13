@@ -20,7 +20,6 @@ module WBCR
     MAIN_MENU  = %w(blog contact faq thankyou)
     LEARN_MORE = %w(about facility)
     TRIALS     = %w(information sponsor volunteer)
-    TEST_PAGES = %w(hubspot original webdev)
 
     # Home Page 
     get '/' do
@@ -46,13 +45,6 @@ module WBCR
     TRIALS.each do |page|
       get "/trial/#{page}/?" do
         erb "trial/#{page}".to_sym
-      end
-    end
-    
-    # => TODO: Remove for Prod
-    TEST_PAGES.each do |page|
-      get "/test/#{page}/?" do
-        erb "test/#{page}".to_sym
       end
     end
 
