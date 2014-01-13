@@ -31,7 +31,7 @@ module WBCR
     # GET Requests
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
-        @action = params[:action] if page == 'thankyou'
+        @action = thank_you_action(params[:action]) if page == 'thankyou'
         erb "#{page}".to_sym
       end
     end
