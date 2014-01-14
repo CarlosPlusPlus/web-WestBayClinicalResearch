@@ -17,7 +17,7 @@
 		
 		<div class="row">
 			<p id="thankyou-splash">
-				<b>Thank you for <%= @action %>
+				<%= @action %>
 			</p>
 		</div>
 
@@ -28,16 +28,21 @@
 				</span>
 			</div>
 
-			<div class="col-sm-8 verticalLine" id="faq">
+			<div class="col-sm-7 justify verticalLine" id="faq">
 				<span>
-					Want to learn more information regarding our trials at West Bay Clinical Research? Head on over to our <u><%= link_to("/faq", "Frequently Asked Questions") %></u> page.<br><br>
+					Want to learn about our trials at West Bay Clinical Research?<br>
+					Go to our <u><%= link_to("/faq", "Frequently Asked Questions") %></u> page for more information.<br><br>
 					<u><%= link_to("/contact", "CONTACT US")%></u> with any questions you may have!
 				</span>
 			</div>
 		</div>
 
 		<div class="row" id="thankyou-company">
-			
+			<h3>Who is West Bay Clinical Research?</h3>
+			<br>
+			<p>
+				West Bay Clinical Research was founded in 2003 as a multi-service and multi-specialty clinical research center. We have participated in over thirty pharmaceutical and biotechnology research trials in the last decade. We have strong relationships with many physicians throughout Rhode Island. These relationships allow us the ability to obtain patients that would benefit from our trials and offer expert investigators to our sponsors.
+			</p>
 		</div>
 
 	</div>
