@@ -1,1 +1,44 @@
-Thank you for <%= @action %>
+<section id="thankyou-social">
+	<div class="row footer">
+	  <div class="col-sm-4 col-sm-offset-8">
+	    <div class="bold center">
+	      <a href="#" class="glyphicons e-mail thankyou"><i></i></a>
+	      <a href="#" class="glyphicons google_plus thankyou"><i></i></a>
+	      <a href="#" class="glyphicons facebook thankyou"><i></i></a>
+	      <a href="#" class="glyphicons twitter thankyou"><i></i></a>
+	      <a href="#" class="glyphicons linked_in thankyou"><i></i></a>
+	    </div>
+	  </div>     
+	</div>
+</section>
+
+<section id="thankyou-text">
+	<div class="container content">
+		
+		<div class="row">
+			<p id="thankyou-splash">
+				<b>Thank you for <%= @action %>
+			</p>
+		</div>
+
+		<div class="row" id="thankyou-note">
+			<div class="col-sm-4 bold center small-caps" id="headline">
+				<span>
+					Learn More<br>About Our Trials
+				</span>
+			</div>
+
+			<div class="col-sm-8 verticalLine" id="faq">
+				<span>
+					Want to learn more information regarding our trials at West Bay Clinical Research? Head on over to our <u><%= link_to("/faq", "Frequently Asked Questions") %></u> page.<br><br>
+					<u><%= link_to("/contact", "CONTACT US")%></u> with any questions you may have!
+				</span>
+			</div>
+		</div>
+
+		<div class="row" id="thankyou-company">
+			
+		</div>
+
+	</div>
+</section>

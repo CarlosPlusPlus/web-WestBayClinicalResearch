@@ -167,3 +167,55 @@ address {
   border: 2px solid;
   border-color: gray;
 }
+
+/*******************/
+/* Page: THANK YOU */
+/*******************/
+
+div#social {
+  float: right;
+}
+
+/*.glyphicons.thankyou {
+  padding: 5px 0 5px 40px;
+}*/
+
+.glyphicons.thankyou i:before {
+  font: 30px/1em 'Glyphicons';
+}
+
+#thankyou-splash {
+  font-size: 28px;
+  line-height: 1.25em;
+}
+
+#thankyou-note {
+  background-color: #7694a7;
+  
+  margin-top: 40px;
+  padding: 15px 15px;
+  width: 100%;
+  height: 100%;
+}
+
+#thankyou-note div#headline {
+  height: 100%;
+  
+  color: black;
+  font-size: 32px;
+  line-height: normal;
+}
+
+#thankyou-note div#faq {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.verticalLine {
+  border-left: solid #ffffff;
+}
+
+#faq span a {
+  color: blue
+}
