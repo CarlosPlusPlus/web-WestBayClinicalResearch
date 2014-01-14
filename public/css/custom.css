@@ -176,10 +176,6 @@ div#social {
   float: right;
 }
 
-/*.glyphicons.thankyou {
-  padding: 5px 0 5px 40px;
-}*/
-
 .glyphicons.thankyou i:before {
   font: 30px/1em 'Glyphicons';
 }
@@ -222,6 +218,19 @@ div#social {
 
 #faq span a {
   color: blue
+}
+
+#caduceus {
+  position: relative;
+}
+
+#caduceus img {
+  position: absolute;
+  height: auto;
+
+  width: 250px;
+  left: -80px;
+  top: -80px;
 }
 
 #thankyou-company {
