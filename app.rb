@@ -17,7 +17,7 @@ module WBCR
     # Route Definitions #
     #####################
 
-    MAIN_MENU  = %w(blog contact faq thankyou)
+    MAIN_MENU  = %w(blog contact faq)
     LEARN_MORE = %w(about facility)
     TRIALS     = %w(information sponsor volunteer)
 
@@ -30,7 +30,6 @@ module WBCR
     # GET Requests
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
-        @action = thank_you_action(params[:action]) if page == 'thankyou'
         erb "#{page}".to_sym
       end
     end
@@ -48,8 +47,21 @@ module WBCR
       end
     end
 
+    get "/thankyou/?" do
+      if params[:action].nil?
+        erb "404".to_sym
+      else
+        @action = thank_you_action(params[:action])
+        erb :thankyou
+      end
+    end
+
     # => TODO: Implement Custom 404 page.
     # =======> Redirect to Home Page (JS?)
+    error do
+      erb "404".to_sym
+    end
+
     not_found do
       erb "404".to_sym
     end
