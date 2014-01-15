@@ -16,7 +16,7 @@ module Sinatra
     end
 
     def thank_you_url(action)
-      'http://#{ domain }/thankyou?action=#{ action }'
+      "http://#{ domain }/thankyou?action=#{ action }"
     end
   end
 
