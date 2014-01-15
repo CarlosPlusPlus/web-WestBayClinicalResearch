@@ -1,3 +1,24 @@
+/****************/
+/* Page: HEADER */
+/****************/
+
+body {
+  padding-top: 70px;
+}
+
+.brand img {
+  height: 50px;
+  width: 200px;
+}
+
+.navbar-default {
+  background-color: #d0d5d9
+}
+
+ul.navbar-right li {
+  font-weight: bolder;
+}
+
 /*****************/
 /* COMMON STYLES */
 /*****************/
@@ -79,14 +100,6 @@ div.links.link-heading {
 div.row.row-padding {
   padding-top:    20px;
   padding-bottom: 20px;
-}
-
-/****************/
-/* Page: HEADER */
-/****************/
-
-.grove-navbar {
-  margin-bottom: 20px;
 }
 
 /***************/

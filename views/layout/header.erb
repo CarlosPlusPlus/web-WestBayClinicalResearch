@@ -1,61 +1,62 @@
 <header>
-
-  <nav class="navbar navbar-default grove-navbar" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-      
+
       <div class="navbar-header">
-        <a href="#" class="grove-toggle" data-toggle="collapse" data-target=".grove-nav">
-          <i class="glyphicons show_lines"><i></i>
-          </i>
-        </a>
-        <a href="/" class="navbar-brand">
-          <img class="header-logo" src="/img/wbcr_logo.png" alt="West Bay Clinical Research">
-        </a>
+        <a class="navbar-brand" href="#">West Bay Clinical Research Logo</a>
       </div>
 
-      <!-- Need jQuery to figure out which menu item is active. -->
-      <!-- Insert Sinatra link_to helper tags for webpages. -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <%= link_to("/", "Home") %>
+          </li>
 
-      <div class="collapse navbar-collapse grove-nav">
-          <ul class="nav navbar-nav">
-            
-            <li class="active">
-              <a href="/">Home</a>
-            </li>
-            
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown">Learn More<b class="caret"></b></a>
-              <ul class = "dropdown-menu">
-                <li><%= link_to("/learnmore/about", "About Us") %></li>
-                <li><%= link_to("/learnmore/facility", "Facility and Services") %></li>
-              </ul>
-            </li>                     
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Learn More <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to("/learnmore/about", "About Us") %>
+              </li>
+              <li>
+                <%= link_to("/learnmore/facility", "Facility and Services") %>
+              </li>
+            </ul>
+          </li>
 
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown">Trials<b class="caret"></b></a>
-              <ul class = "dropdown-menu">
-                <li><%= link_to("/trial/information", "Trial Information") %></li>
-                <li><%= link_to("/trial/sponsor", "Sponsor a Trial") %></li>
-                <li><%= link_to("/trial/volunteer", "Volunteer for a Trial") %></li>
-              </ul>
-            </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Trials <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to("/trial/information", "Trial Information") %>
+              </li>
+              <li>
+                <%= link_to("/trial/sponsor", "Sponsor a Trial") %>
+              </li>
+              <li>
+                <%= link_to("/trial/volunteer", "Volunteer for a Trial") %>
+              </li>
+            </ul>
+          </li>
 
-            <li>
-              <a href="#">Blog</a>
-            </li>   
+          <li>
+            <%= link_to("/", "Blog") %>
+          </li>
 
-            <li>
-              <li><%= link_to("/contact", "Contact Us") %></li>
-            </li>
+          <li>
+            <li><%= link_to("/contact", "Contact Us") %></li>
+          </li>
 
-            <li>
-              <li><%= link_to("/faq", "FAQ") %></li>
-            </li>
-
-          </ul>        
+          <li>
+            <li><%= link_to("/faq", "FAQ") %></li>
+          </li>
+        </ul>
       </div>
 
     </div>
-  </nav>
-
+  </div>
 </header>
