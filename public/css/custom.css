@@ -118,10 +118,17 @@ div.pagetitle h1 {
     padding: 10% 0;
 }
 
+/******************/
+/* Page: FACILITY */
+/******************/
 
 td#facility {
   border-top-width: 0px;
   padding: 4px;
+}
+
+#facility-headline {
+  font-size: 32px;
 }
 
 /***************/
