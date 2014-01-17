@@ -126,12 +126,28 @@ div.row.row-padding {
   padding-bottom: 15px;
 }
 
+#index-headline {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#index-headline h1 {
+  font-size: 64px;
+  color: #293540;
+}
+
+#index-headline h2 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+
 div.pagetitle {
 	padding: 5px;
 }
 
 div.pagetitle h1 {
   padding: 0;
+
   font-size: 24px;
   font-weight: bold;
   font-variant:small-caps;
