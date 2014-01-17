@@ -132,15 +132,15 @@ div.row.row-padding {
 }
 
 #index-headline h1 {
-  font-size: 64px;
+  font-size: 50px;
   color: #293540;
-  line-height: 64px;
+  line-height: 50px;
 }
 
 #index-headline h2 {
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 div.pagetitle {
