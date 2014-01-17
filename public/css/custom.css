@@ -3,19 +3,34 @@
 /****************/
 
 body {
-  padding-top: 70px;
+  padding-top: 65px;
 }
 
-.brand img {
+.navbar {
+  min-height: 65px;
+  border-bottom: 5px solid #000;
+
+}
+
+.navbar-brand {
+  padding: 0px;
+  padding-top: 5px;
+}
+
+.navbar-brand img {
   height: 50px;
-  width: 200px;
+  width: auto;
 }
 
 .navbar-default {
   background-color: #d0d5d9
 }
 
-ul.navbar-right li {
+ul.navbar-right {
+  padding-top: 5px;
+}
+
+ul.navbar-right li a {
   font-weight: bolder;
 }
 
