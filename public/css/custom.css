@@ -162,7 +162,15 @@ div.pagetitle h1 {
 
 .cta-bkgd {
   padding: 30px 0;
+  background-image:url(/img/bg-one.jpg);
   background-size: 100% 100%;
+}
+
+.cta-button {
+  font-size: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
 }
 
 /******************/
