@@ -3,8 +3,8 @@ require './config/authentication' if File.exists?('./config/authentication.rb')
 
 # Include Sinatra libraries.
 require 'sinatra'
-require 'sinatra/activerecord'
 require 'sinatra/base'
+require 'sinatra/activerecord'
 require 'sinatra/reloader'
 
 # Include debug capabilities in development.
@@ -26,10 +26,8 @@ configure :development do
  set :show_exceptions, true
 end
 
-# binding.pry
-
 configure :production do
- db = URI.parse(ENV['DATABASE_URL'])
+ db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
 
  ActiveRecord::Base.establish_connection(
    :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
