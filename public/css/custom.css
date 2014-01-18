@@ -187,6 +187,22 @@ span.skills {
   opacity: 0.65;
 }
 
+.team-image {
+  background-image:url(/img/bg-one.jpg);
+  width: 100%;
+}
+
+.team-image img {
+  display: block;
+  
+  padding-top: 50px;
+  width: 50%;
+  height: 50%;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .description {
   padding: 0px;
 }
