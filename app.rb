@@ -1,6 +1,3 @@
-require 'bundler'
-Bundler.require
-
 require_relative 'environment'
 
 module WBCR
