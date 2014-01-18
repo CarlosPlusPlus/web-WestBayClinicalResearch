@@ -1,3 +1,9 @@
+# Include Sinatra libraries.
+require 'sinatra'
+require 'sinatra/activerecord'
+# require 'sinatra/base'
+# require 'sinatra/reloader'
+
 require_relative 'environment'
 
 module WBCR
