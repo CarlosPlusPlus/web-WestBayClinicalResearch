@@ -51,14 +51,13 @@ module WBCR
       end
     end
 
-    # TODO: Implement Custom 404 page.
-    # => Redirect to Home Page (JS?)
+    # Redirect to HomePage if Error || Page Not Found
     error do
-      erb "404".to_sym
+      redirect '/'
     end
 
     not_found do
-      erb "404".to_sym
+      redirect '/'
     end
 
     ####################
