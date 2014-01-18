@@ -26,7 +26,7 @@ module Sinatra
     end
 
     def social_media_icons
-      email + facebook + google_plus + linked_in + twitter
+      email + linked_in + twitter
     end
 
     # Thank You Page
