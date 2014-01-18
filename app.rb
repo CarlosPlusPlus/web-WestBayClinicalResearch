@@ -7,7 +7,7 @@ module WBCR
       set :public_folder, 'public'
     end
 
-    set :javascripts, [:jquery, 'newsletter']
+    set :javascripts, [:jquery, 'grids', 'newsletter']
 
     #####################
     # Route Definitions #
@@ -30,6 +30,7 @@ module WBCR
 
     LEARN_MORE.each do |page|
       get "/learnmore/#{page}/?" do
+        js 'team'     if page == 'about'
         js 'bxslider' if page == 'facility'
         erb "learnmore/#{page}".to_sym
       end
