@@ -4,6 +4,4 @@
 require "sinatra/activerecord/rake"
 require "./app"
 
-Dir.glob("./tasks/*.rb").each do |file|
-  require file
-end
+Dir.glob('lib/tasks/*.rake').each { |r| load r }
