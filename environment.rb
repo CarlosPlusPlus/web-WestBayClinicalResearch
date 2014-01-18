@@ -2,6 +2,7 @@ require './config/authentication' if File.exists?('./config/authentication.rb')
 
 require 'sinatra'
 require 'sinatra/reloader'
+require 'active_record'
 
 configure :development do
   require 'better_errors'
