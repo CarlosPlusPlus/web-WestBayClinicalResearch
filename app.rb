@@ -1,11 +1,9 @@
-require 'sinatra'
-require 'sinatra/activerecord'
-require 'sinatra/reloader'
-
 require_relative 'environment'
 
 module WBCR
   class App < Sinatra::Application
+    register Sinatra::ActiveRecordExtension
+
 
     configure do
       set :root, File.dirname(__FILE__)
