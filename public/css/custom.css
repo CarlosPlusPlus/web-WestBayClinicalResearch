@@ -173,19 +173,6 @@ div.pagetitle h1 {
   border-color: black;
 }
 
-/******************/
-/* Page: FACILITY */
-/******************/
-
-td#facility {
-  border-top-width: 0px;
-  padding: 4px;
-}
-
-#facility-headline {
-  font-size: 32px;
-}
-
 /***************/
 /* Page: ABOUT */
 /***************/
@@ -198,6 +185,37 @@ span.skills {
   margin-left: 2.5em;
   font-style: italic;
   opacity: 0.65;
+}
+
+.description {
+  padding: 0px;
+}
+
+.team-member .description {
+  position: relative;
+  padding-bottom: 50px;
+  display: table-cell;
+}
+
+.team-member .description .social {
+  position: absolute;
+  bottom: 0;
+  padding: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+/******************/
+/* Page: FACILITY */
+/******************/
+
+td#facility {
+  border-top-width: 0px;
+  padding: 4px;
+}
+
+#facility-headline {
+  font-size: 32px;
 }
 
 /******************/
