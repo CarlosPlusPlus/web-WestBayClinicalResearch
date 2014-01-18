@@ -18,13 +18,11 @@ module WBCR
     LEARN_MORE = %w(about facility)
     TRIALS     = %w(information sponsor volunteer)
 
-    # Home Page 
     get '/' do
       @index = true
       erb :index
     end
 
-    # GET Requests
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
         erb "#{page}".to_sym
@@ -86,6 +84,5 @@ module WBCR
         erb file_name, :layout => false
       end
     end
-    
   end
 end
