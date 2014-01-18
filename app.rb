@@ -1,5 +1,7 @@
 require_relative 'environment'
 
+# set :environment, :production
+
 module WBCR
   class App < Sinatra::Application
 
