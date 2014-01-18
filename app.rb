@@ -51,8 +51,8 @@ module WBCR
       end
     end
 
-    # => TODO: Implement Custom 404 page.
-    # =======> Redirect to Home Page (JS?)
+    # TODO: Implement Custom 404 page.
+    # => Redirect to Home Page (JS?)
     error do
       erb "404".to_sym
     end
