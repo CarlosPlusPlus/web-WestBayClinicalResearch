@@ -34,8 +34,8 @@ configure :production do
 end
 
 # Include all models, concerns, and helpers in /lib/*/
-Dir.glob('./lib/*').each do |folder|
-  Dir.glob(folder +'/*.rb').each do |file|
-    require file
-  end
-end
+# Dir.glob('./lib/*').each do |folder|
+#   Dir.glob(folder +'/*.rb').each do |file|
+#     require file
+#   end
+# end

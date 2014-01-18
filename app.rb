@@ -4,7 +4,7 @@ require 'sinatra/activerecord'
 # require 'sinatra/base'
 # require 'sinatra/reloader'
 
-require_relative 'environment'
+require './environment'
 
 module WBCR
   class App < Sinatra::Application
