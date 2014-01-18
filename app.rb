@@ -2,9 +2,6 @@ require_relative 'environment'
 
 module WBCR
   class App < Sinatra::Application
-    # register Sinatra::ActiveRecordExtension
-
-
     configure do
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public'

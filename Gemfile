@@ -1,29 +1,29 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'sinatra'								# Core Sinatra library.
-gem 'sinatra-contrib'				# Allow for Reloader.
+gem 'sinatra'
+gem 'sinatra-contrib'
 
-gem 'activerecord'					# ActiveRecord capability.
+gem 'activerecord'
 gem 'sinatra-activerecord'
-gem 'sinatra-flash'					# Sinatra flash capability.
+gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 
 gem 'rake'
 
 group :development, :test do
-	gem 'sqlite3'							# SQLite3 in development.
-	gem 'tux'									# CLI for models/methods.
+	gem 'sqlite3'
+	gem 'tux'
 
-	gem 'better_errors'				# Better error output.
-	gem 'binding_of_caller'		# CLI error output.
-	gem 'pry-debugger'				# Ruby debugger.
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'pry-debugger'
   
-  gem 'capybara'						# Integration testing.
-  gem 'factory_girl'				# Test tool for factories.
-	gem 'rspec'								# Ruby testing framework.
+  gem 'capybara'
+  gem 'factory_girl'
+	gem 'rspec'
 end
 
 group :production do
-	gem 'pg'									# PostgreSQL in production.
+	gem 'pg'
 end
