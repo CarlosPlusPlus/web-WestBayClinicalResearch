@@ -2,7 +2,7 @@ require_relative 'environment'
 
 module WBCR
   class App < Sinatra::Application
-    register Sinatra::ActiveRecordExtension
+    # register Sinatra::ActiveRecordExtension
 
 
     configure do
