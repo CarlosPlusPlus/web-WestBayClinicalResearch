@@ -21,6 +21,10 @@ body {
   width: auto;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
 #collapse-btn {
   border-style: solid;
   border-width: 3px;
