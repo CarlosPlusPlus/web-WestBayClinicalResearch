@@ -7,7 +7,8 @@ module WBCR
       set :public_folder, 'public'
     end
 
-    set :javascripts, [:jquery, 'grids', 'newsletter']
+    set :javascripts, [:jquery, 'collapse',
+                       'grids', 'newsletter']
 
     #####################
     # Route Definitions #
@@ -44,7 +45,7 @@ module WBCR
 
     get "/thankyou/?" do
       if params[:action].nil?
-        erb "404".to_sym
+        redirect '/'
       else
         @action = thank_you_action(params[:action])
         erb :thankyou
