@@ -1,5 +1,5 @@
 <!-- Titlebar  -->
-<div class="widewrapper">
+<div class="widewrapper" id="headline-bkgd">
 	<div class="container" id="index-headline">
     <h1 class="center small-caps">
       Committed to the Advancement of New Medical Therapies
@@ -12,7 +12,7 @@
 
 <!-- Call to Action -->
 <div class="widewrapper weak-highlight">		
-	<div class="row center cta-bkgd">
+	<div class="row center" id="cta-bkgd">
     <div class="btn-group">
       <%= link_to("/trial/information", "Learn About Our Trials",
           :class => "btn btn-bold cta-button") %>
@@ -21,15 +21,21 @@
 </div>
 
 <!-- Site Links -->
-<div class="widewrapper strong-highlight">
-  <div class="container content">
-
-    <div class="row">
-                      
+<div class="widewrapper strong-highlight" id="tile-bkgd">
+  <div class="container content tile-row">
+      
+    <div class="col-sm-3 index-tile">
+      Tile #1
     </div>
 
-    <div class="clearfix"></div>
+    <div class="col-sm-3 index-tile">
+      Tile #2
+    </div>
 
+    <div class="col-sm-3 index-tile">
+      Tile #3
+    </div>
+                      
   </div>
 </div>
 
