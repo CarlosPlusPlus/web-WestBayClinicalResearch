@@ -3,11 +3,11 @@
 /****************/
 
 body {
-  padding-top: 65px;
+  padding-top: 70px;
 }
 
 .navbar {
-  min-height: 65px;
+  min-height: 70px;
   border-bottom: 5px solid #000;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #d0d5d9
+  background-color: #E8E8E8;
 }
 
 ul.navbar-right {
@@ -140,7 +140,7 @@ div.row.row-padding {
 /***************/
 
 #headline-bkgd {
-  background-color: #EFFAFC;
+  background-color: white;
 }
 
 #index-headline {
@@ -223,7 +223,7 @@ div.index-tile {
   width:  250px;
   margin: 25px 25px;
 
-  background-color: white;
+  background-color: #EFFAFC;
 
   border-style: solid;
   border-width: 3px;
