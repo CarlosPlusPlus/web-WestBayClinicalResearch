@@ -233,6 +233,15 @@ div.index-tile {
   text-align: center;
 }
 
+.index-tile div a.glyphicons {
+  padding: 0 0 40px 40px;
+}
+
+.index-tile div a.glyphicons i:before {
+  color: #00008B;
+  font: 30px/1em 'Glyphicons'
+}
+
 /***************/
 /* Page: ABOUT */
 /***************/
