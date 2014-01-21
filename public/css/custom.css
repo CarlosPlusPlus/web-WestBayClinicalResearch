@@ -216,6 +216,8 @@ div.pagetitle h1 {
   display: table;
   margin-left: auto;
   margin-right: auto;
+  
+  text-align: center;
 }
 
 div.index-tile {
@@ -229,8 +231,6 @@ div.index-tile {
   border-width: 3px;
   border-color: black;
   border-radius: 10px;
-
-  text-align: center;
 
   transition: all 0.25s linear;
 }
@@ -262,6 +262,46 @@ div.index-tile {
   box-shadow:         0 5px 25px #000;
   -moz-box-shadow:    0 5px 25px #000;
   -webkit-box-shadow: 0 5px 25px #000;
+}
+
+#sponsors {
+  font-size: 36px;
+}
+
+#sponsor-bkgd {
+  background-color: #EFFAFC;
+}
+
+.sponsor-tile {
+  height: 100px;
+  width:  175px;
+  margin: 25px 50px;
+
+  background-color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+
+  display: table;
+  transition: all 0.5s linear;
+}
+
+.sponsor-tile a {
+  display: table-cell;
+  vertical-align: middle;
+
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.sponsor-tile:hover {
+  background-color: #7694a7;
+  border-radius: 100px;
+  transition: all 1s;
+}
+
+div.sponsor-tile:hover a {
+  color: white;
 }
 
 /***************/
