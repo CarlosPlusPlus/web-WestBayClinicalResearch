@@ -7,8 +7,7 @@ module WBCR
       set :public_folder, 'public'
     end
 
-    set :javascripts, [:jquery, 'collapse',
-                       'grids', 'newsletter']
+    set :javascripts, [:jquery, 'grids', 'newsletter']
 
     #####################
     # Route Definitions #
