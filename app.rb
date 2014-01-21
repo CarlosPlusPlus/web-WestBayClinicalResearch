@@ -19,6 +19,7 @@ module WBCR
 
     get '/' do
       @index = true
+      js 'index'
       erb :index
     end
 
