@@ -252,7 +252,8 @@ div.index-tile {
 }
 
 #sponsor-bkgd {
-  background-color: #EFFAFC;
+  /*background-color: #EFFAFC;*/
+  background-color: #EBEBEB;
 }
 
 .sponsor-tile {
@@ -271,7 +272,7 @@ div.index-tile {
   transition: all 0.5s linear;
 }
 
-.sponsor-tile a {
+.sponsor-tile span {
   display: table-cell;
   vertical-align: middle;
 
@@ -298,17 +299,6 @@ div.index-tile {
     box-shadow:         0 5px 25px #000;
     -moz-box-shadow:    0 5px 25px #000;
     -webkit-box-shadow: 0 5px 25px #000;
-  }
-
-  .sponsor-tile:hover {
-    background-color: #7694a7;
-    border-radius: 0px;
-    transition: all 0.5s linear;
-
-  }
-
-  div.sponsor-tile:hover a {
-    color: white;
   }
 }
 
