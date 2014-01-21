@@ -277,10 +277,12 @@ div.index-tile {
   width:  175px;
   margin: 25px 50px;
 
-  background-color: white;
+  background-color: #7694a7;
+
   border-style: solid;
   border-width: 3px;
   border-color: black;
+  border-radius: 100px;
 
   display: table;
   transition: all 0.5s linear;
@@ -290,14 +292,16 @@ div.index-tile {
   display: table-cell;
   vertical-align: middle;
 
+  color: white;
   font-size: 18px;
   font-weight: bolder;
 }
 
 .sponsor-tile:hover {
   background-color: #7694a7;
-  border-radius: 100px;
-  transition: all 1s;
+  border-radius: 0px;
+  transition: all 0.5s linear;
+
 }
 
 div.sponsor-tile:hover a {
