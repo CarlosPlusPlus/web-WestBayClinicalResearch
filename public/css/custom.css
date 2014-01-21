@@ -231,6 +231,8 @@ div.index-tile {
   border-radius: 10px;
 
   text-align: center;
+
+  transition: all 0.25s linear;
 }
 
 .index-tile div a.glyphicons {
@@ -248,9 +250,18 @@ div.index-tile {
 }
 
 .index-tile a {
-
   font-size: 18px;
   font-weight: bolder;
+}
+
+.index-tile:hover {
+  transform:         scale(1.2);
+  -moz-transform:    scale(1.2);
+  -webkit-transform: scale(1.2);
+
+  box-shadow:         0 5px 25px #000;
+  -moz-box-shadow:    0 5px 25px #000;
+  -webkit-box-shadow: 0 5px 25px #000;
 }
 
 /***************/
