@@ -242,6 +242,17 @@ div.index-tile {
   font: 30px/1em 'Glyphicons'
 }
 
+.index-tile p {
+  padding: 10px 0px;
+  font-size: 16px;
+}
+
+.index-tile a {
+
+  font-size: 18px;
+  font-weight: bolder;
+}
+
 /***************/
 /* Page: ABOUT */
 /***************/
