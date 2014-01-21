@@ -201,13 +201,6 @@ div.pagetitle h1 {
   box-shadow: inset 0 0 10px white;
 }
 
-.cta-button:hover {
-  background-color: #0431B4;
-  color: white;
-
-  box-shadow: inset 0 0 35px white;
-}
-
 #tile-bkgd {
   border-bottom:solid 3px black;
 }
@@ -254,16 +247,6 @@ div.index-tile {
   font-weight: bolder;
 }
 
-.index-tile:hover {
-  transform:         scale(1.15);
-  -moz-transform:    scale(1.15);
-  -webkit-transform: scale(1.15);
-
-  box-shadow:         0 5px 25px #000;
-  -moz-box-shadow:    0 5px 25px #000;
-  -webkit-box-shadow: 0 5px 25px #000;
-}
-
 #sponsors {
   font-size: 36px;
 }
@@ -297,15 +280,36 @@ div.index-tile {
   font-weight: bolder;
 }
 
-.sponsor-tile:hover {
-  background-color: #7694a7;
-  border-radius: 0px;
-  transition: all 0.5s linear;
+/* Hover effects in Media Query */
 
-}
+@media screen {
+  .cta-button:hover {
+    background-color: #0431B4;
+    color: white;
 
-div.sponsor-tile:hover a {
-  color: white;
+    box-shadow: inset 0 0 35px white;
+  }
+
+  .index-tile:hover {
+    transform:         scale(1.15);
+    -moz-transform:    scale(1.15);
+    -webkit-transform: scale(1.15);
+
+    box-shadow:         0 5px 25px #000;
+    -moz-box-shadow:    0 5px 25px #000;
+    -webkit-box-shadow: 0 5px 25px #000;
+  }
+
+  .sponsor-tile:hover {
+    background-color: #7694a7;
+    border-radius: 0px;
+    transition: all 0.5s linear;
+
+  }
+
+  div.sponsor-tile:hover a {
+    color: white;
+  }
 }
 
 /***************/
