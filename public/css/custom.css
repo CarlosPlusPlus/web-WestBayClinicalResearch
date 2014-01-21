@@ -255,9 +255,9 @@ div.index-tile {
 }
 
 .index-tile:hover {
-  transform:         scale(1.2);
-  -moz-transform:    scale(1.2);
-  -webkit-transform: scale(1.2);
+  transform:         scale(1.15);
+  -moz-transform:    scale(1.15);
+  -webkit-transform: scale(1.15);
 
   box-shadow:         0 5px 25px #000;
   -moz-box-shadow:    0 5px 25px #000;
