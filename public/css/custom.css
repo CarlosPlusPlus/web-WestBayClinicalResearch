@@ -357,26 +357,32 @@ span.skills {
 /* Page: FACILITY */
 /******************/
 
-td#facility {
-  border-top-width: 0px;
-  padding: 4px;
-}
-
 #facility-headline {
   font-size: 32px;
 }
 
-/******************/
-/* Page: FACILITY */
-/******************/
-
 .table-heading {
   font-size: 20px;
   font-variant: small-caps;
+  text-decoration: underline;
 }
 
 td#facility {
+  border-top-width: 0px;
+  padding: 4px;
+  font-weight: bold;
   width: 50%;
+}
+
+/***************/
+/* Page: TRIAL */
+/***************/
+
+td#trial {
+  border-top-width: 0px;
+  padding: 4px;
+  font-weight: bold;
+  width: 33.3%;
 }
 
 /*****************/
