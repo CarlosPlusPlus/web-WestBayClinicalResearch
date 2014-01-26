@@ -9,10 +9,6 @@ module WBCR
 
     set :javascripts, [:jquery, 'grids', 'newsletter']
 
-    #####################
-    # Route Definitions #
-    #####################
-
     MAIN_MENU  = %w(blog contact faq)
     LEARN_MORE = %w(about facility)
     TRIALS     = %w(information sponsor volunteer)
@@ -52,7 +48,6 @@ module WBCR
       end
     end
 
-    # Redirect to HomePage if Error || Page Not Found
     error do
       redirect '/'
     end
@@ -60,10 +55,6 @@ module WBCR
     not_found do
       redirect '/'
     end
-
-    ####################
-    # Helper Functions #
-    ####################
 
     helpers do
       def domain
