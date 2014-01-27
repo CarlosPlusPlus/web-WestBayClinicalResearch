@@ -4,6 +4,11 @@
 
 body {
   padding-top: 70px;
+  color: black;
+}
+
+a {
+  color: #00008B;
 }
 
 .navbar {
@@ -399,6 +404,11 @@ td#facility {
   font-weight: bolder;
 }
 
+#trial-list div.row div span a {
+  font-weight: bolder;
+  color: #7694a7;
+}
+
 td#trial {
   border-top-width: 0px;
   padding: 4px;
@@ -421,6 +431,11 @@ address {
 .contact-panel {
   border: 2px solid;
   border-color: gray;
+}
+
+#contact-email p a {
+  color: #7694a7;
+  font-weight: bolder;
 }
 
 /*******************/
