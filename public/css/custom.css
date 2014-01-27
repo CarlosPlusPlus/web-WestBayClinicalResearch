@@ -250,7 +250,7 @@ div.pagetitle h1 {
   font-weight: bolder;
 }
 
-#sponsors {
+#featured-sponsors {
   font-size: 36px;
 }
 
@@ -376,6 +376,21 @@ td#facility {
 /***************/
 /* Page: TRIAL */
 /***************/
+
+.trial-col p {
+  display: table-cell;
+  width: auto;
+  height: 250px;
+  vertical-align: middle;
+}
+
+#sponsor-list div.row {
+  margin-top: 10px;
+}
+
+#sponsor-list div.row div span {
+  font-weight: bolder;
+}
 
 td#trial {
   border-top-width: 0px;
