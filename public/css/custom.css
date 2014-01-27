@@ -384,11 +384,18 @@ td#facility {
   vertical-align: middle;
 }
 
-#sponsor-list div.row {
-  margin-top: 10px;
+.trial-heading {
+  font-size: 28px;;
+  font-variant: small-caps;
+  text-decoration: underline;
 }
 
-#sponsor-list div.row div span {
+#trial-list div.row {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+#trial-list div.row div span {
   font-weight: bolder;
 }
 
