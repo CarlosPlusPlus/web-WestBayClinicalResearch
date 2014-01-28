@@ -56,6 +56,10 @@ ul.navbar-right li a {
   font-weight: bolder;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #00008B;
+}
+
 /****************/
 /* Page: FOOTER */
 /****************/
@@ -226,7 +230,6 @@ div.pagetitle h1 {
   display: table;
   margin-left: auto;
   margin-right: auto;
-  
   text-align: center;
 }
 
