@@ -57,6 +57,10 @@ ul.navbar-right li a {
 }
 
 .navbar-default .navbar-nav > li > a {
+  color: gray;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
   color: #00008B;
 }
 
