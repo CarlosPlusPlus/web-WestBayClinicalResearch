@@ -496,8 +496,13 @@ div#social {
   float: right;
 }
 
-.glyphicons.thankyou i:before {
+#thankyou-icons .glyphicons i:before {
   font: 30px/1em 'Glyphicons';
+}
+
+.action-tile div a.glyphicons i:before {
+  color: #00008B;
+  font: 30px/1em 'Glyphicons'
 }
 
 .tab {
