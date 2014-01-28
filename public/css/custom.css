@@ -169,16 +169,27 @@ div.row.row-padding {
   padding-bottom: 50px;
 }
 
-#index-headline h1 {
-  font-size: 40px;
+#header-row {
+  margin: 0px 5px;
+}
+
+#heading-primary {
+  font-size: 32px;
   color: #293540;
   line-height: 40px;
 }
 
-#index-headline h2 {
-  font-size: 25px;
+#heading-secondary {
+  font-size: 24px;
   padding-top: 30px;
   line-height: 25px;
+}
+
+#header-img {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
 }
 
 div.pagetitle {
@@ -189,7 +200,7 @@ div.pagetitle h1 {
   padding: 0;
   float: none;
 
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   font-variant:small-caps;
 }
