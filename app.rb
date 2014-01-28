@@ -14,13 +14,14 @@ module WBCR
     TRIALS     = %w(information sponsor volunteer)
 
     get '/' do
-      @index = true
+      @no_container = true
       js 'index'
       erb :index
     end
 
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
+        @no_container = true if page == 'contact'
         erb "#{page}".to_sym
       end
     end
