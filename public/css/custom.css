@@ -1,6 +1,6 @@
-/****************/
-/* Page: HEADER */
-/****************/
+/**********/
+/* GLOBAL */
+/**********/
 
 body {
   padding-top: 70px;
@@ -10,6 +10,10 @@ body {
 a {
   color: #00008B;
 }
+
+/****************/
+/* Page: HEADER */
+/****************/
 
 .navbar {
   min-height: 70px;
@@ -50,6 +54,14 @@ ul.navbar-right {
 
 ul.navbar-right li a {
   font-weight: bolder;
+}
+
+/****************/
+/* Page: FOOTER */
+/****************/
+
+a.footer-phone {
+  color: white;
 }
 
 /*****************/
@@ -436,6 +448,10 @@ address {
 #contact-email p a {
   color: #7694a7;
   font-weight: bolder;
+}
+
+a.contact-phone {
+  color: black;
 }
 
 /*******************/
