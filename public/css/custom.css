@@ -423,7 +423,6 @@ td#facility {
 .trial-col p {
   display: table-cell;
   width: auto;
-  height: 225px;
   vertical-align: middle;
 }
 
@@ -431,6 +430,15 @@ td#facility {
   font-size: 28px;;
   font-variant: small-caps;
   text-decoration: underline;
+}
+
+.trial-img {
+  padding-top: 50px;
+}
+
+#trial-list {
+  height: 400px;
+  padding-top: 100px;
 }
 
 #trial-list div.row {
@@ -453,6 +461,17 @@ td#trial {
   padding: 4px;
   font-weight: bold;
   width: 33.3%;
+}
+
+@media screen and (max-width: 775px) {
+  section#trial-sponsors, section#trials {
+    margin-bottom: 100px;
+  }
+
+  #trial-list {
+    height: 400px;
+    padding-top: 50px;
+  }
 }
 
 /*****************/
