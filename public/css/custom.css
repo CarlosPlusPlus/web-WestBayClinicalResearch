@@ -302,7 +302,7 @@ div.pagetitle h1 {
 
 /* Hover effects in Media Query */
 
-@media screen {
+@media screen and (min-width: 500px) {
   .cta-button:hover {
     background-color: #0431B4;
     color: white;
