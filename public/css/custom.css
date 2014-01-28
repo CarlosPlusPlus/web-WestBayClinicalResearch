@@ -505,4 +505,13 @@ div#social {
 
 #thankyou-company {
   margin-top: 100px;
+
+}
+
+#thankyou-company h3 {
+  font-size: 26px;
+}
+
+#thankyou-p {
+  font-size: 20px;
 }
