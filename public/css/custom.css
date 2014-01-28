@@ -64,6 +64,10 @@ ul.navbar-right li a {
 /* Page: FOOTER */
 /****************/
 
+#footer-list li {
+  list-style-type: none;
+}
+
 a.footer-phone {
   color: white;
 }
