@@ -21,7 +21,6 @@ module WBCR
 
     MAIN_MENU.each do |page|
       get "/#{page}/?" do
-        @no_container = true if page == 'contact'
         erb "#{page}".to_sym
       end
     end
