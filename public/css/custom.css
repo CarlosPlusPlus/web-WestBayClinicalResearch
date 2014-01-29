@@ -335,27 +335,6 @@ div.pagetitle h1 {
   padding-bottom: 50px;
 }
 
-/* Hover effects in Media Query */
-
-@media screen and (min-width: 500px) {
-  .cta-button:hover {
-    background-color: #0431B4;
-    color: white;
-
-    box-shadow: inset 0 0 35px white;
-  }
-
-  .action-tile:hover {
-    transform:         scale(1.15);
-    -moz-transform:    scale(1.15);
-    -webkit-transform: scale(1.15);
-
-    box-shadow:         0 5px 25px #000;
-    -moz-box-shadow:    0 5px 25px #000;
-    -webkit-box-shadow: 0 5px 25px #000;
-  }
-}
-
 /***************/
 /* Page: ABOUT */
 /***************/
@@ -471,23 +450,20 @@ td#trial {
   width: 33.3%;
 }
 
-@media screen and (max-width: 775px) {
-  section#trial-sponsors, section#trials {
-    margin-bottom: 100px;
-  }
-
-  #trial-list {
-    height: 400px;
-    padding-top: 50px;
-  }
-}
-
 /*****************/
 /* Page: SPONSOR */
 /*****************/
 
 #sponsor-form {
   padding-top: 50px;
+}
+
+/*******************/
+/* Page: VOLUNTEER */
+/*******************/
+
+#volunteer-form {
+  padding-top: 100px;
 }
 
 /*****************/
@@ -614,4 +590,46 @@ div#social {
 
 #thankyou-p {
   font-size: 20px;
+}
+
+/********************/
+/* Page: MOBILE WEB */
+/********************/
+
+/* Adjust Spacing on all Trial Pages */
+
+@media screen and (max-width: 775px) {
+  section#trial-sponsors, section#trials {
+    margin-bottom: 100px;
+  }
+
+  #trial-list {
+    height: 400px;
+    padding-top: 50px;
+  }
+
+  #volunteer-form {
+    padding-top: 50px;
+  }
+}
+
+/* Disable Index Page Hover */
+
+@media screen and (min-width: 500px) {
+  .cta-button:hover {
+    background-color: #0431B4;
+    color: white;
+
+    box-shadow: inset 0 0 35px white;
+  }
+
+  .action-tile:hover {
+    transform:         scale(1.15);
+    -moz-transform:    scale(1.15);
+    -webkit-transform: scale(1.15);
+
+    box-shadow:         0 5px 25px #000;
+    -moz-box-shadow:    0 5px 25px #000;
+    -webkit-box-shadow: 0 5px 25px #000;
+  }
 }
