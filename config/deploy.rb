@@ -1,5 +1,5 @@
 require 'bundler/capistrano'
-require_relative 'authentication'
+require File.expand_path(File.dirname(__FILE__) + '/authentication.rb')
 
 set :application, 'wbcr'
 set :repository,  'git@github.com:CarlosPlusPlus/web-WestBayClinicalResearch.git'
