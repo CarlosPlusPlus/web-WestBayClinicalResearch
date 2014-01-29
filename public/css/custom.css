@@ -423,24 +423,29 @@ td#facility {
   padding-top: 50px;
 }
 
-#trial-list {
+.trial-list {
   height: 400px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
-#trial-list div.row {
-  margin-top: 10px;
+.trial-list div.row {
+  margin-top: 30px;
   vertical-align: middle;
+  font-size: 14px;
 }
 
-#trial-list div.row div span {
+.trial-list div.row div span {
   font-weight: bolder;
   color: #66696B;
 }
 
-#trial-list div.row div span a {
+.trial-list div.row div span a {
   font-weight: bolder;
   color: black;
+}
+
+#trial-bot {
+  padding-top: 25px;
 }
 
 td#trial {
@@ -600,10 +605,10 @@ div#social {
 
 @media screen and (max-width: 775px) {
   section#trial-sponsors, section#trials {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
-  #trial-list {
+  .trial-list {
     height: 400px;
     padding-top: 50px;
   }
