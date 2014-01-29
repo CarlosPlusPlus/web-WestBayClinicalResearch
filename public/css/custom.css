@@ -611,6 +611,10 @@ div#social {
   #volunteer-form {
     padding-top: 50px;
   }
+
+  #caduceus {
+    display: none;
+  }
 }
 
 /* Disable Index Page Hover */
