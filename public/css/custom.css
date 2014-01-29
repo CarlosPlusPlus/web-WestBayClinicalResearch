@@ -74,6 +74,7 @@ div.row.footer div.col-sm-4 {
 
 div.row.footer div h3 {
   text-decoration: underline;
+  font-size: 22px;
 }
 
 #footer-list li {
@@ -82,6 +83,7 @@ div.row.footer div h3 {
 
 a.footer-phone {
   color: white;
+  font-size: 18px;
 }
 
 /*****************/
@@ -156,6 +158,11 @@ a.footer-phone {
 .padding-t30 {
   padding-top: 30px;
 }
+
+.padding-t50 {
+  padding-top: 50px;
+}
+
 
 div.links.link-heading {
   font-size: 30px;
