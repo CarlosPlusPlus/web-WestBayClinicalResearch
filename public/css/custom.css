@@ -68,6 +68,14 @@ ul.navbar-right li a {
 /* Page: FOOTER */
 /****************/
 
+div.row.footer div.col-sm-4 {
+  padding-top: 15px;
+}
+
+div.row.footer div h3 {
+  text-decoration: underline;
+}
+
 #footer-list li {
   list-style-type: none;
 }
