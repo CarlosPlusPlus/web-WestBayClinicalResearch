@@ -10,8 +10,8 @@ module WBCR
     set :javascripts, [:jquery, 'grids', 'newsletter']
 
     MAIN_MENU  = %w(blog contact faq)
-    LEARN_MORE = %w(about facility experience)
-    TRIALS     = %w(sponsor volunteer)
+    LEARN_MORE = %w(about facility experience sponsor)
+    TRIALS     = %w(volunteer)
 
     get '/' do
       @no_container = true
