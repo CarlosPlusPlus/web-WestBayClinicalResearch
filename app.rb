@@ -11,7 +11,7 @@ module WBCR
 
     MAIN_MENU  = %w(blog contact faq)
     LEARN_MORE = %w(about facility experience sponsor)
-    TRIALS     = %w(volunteer)
+    TRIALS     = %w(heart-attack ulcerative-colitis upcoming-trials volunteer)
 
     get '/' do
       @no_container = true
