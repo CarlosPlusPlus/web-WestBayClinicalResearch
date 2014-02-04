@@ -483,7 +483,11 @@ td#trial {
 /* Page: VOLUNTEER */
 /*******************/
 
-#volunteer-form {
+#volunteer-form50 {
+  padding-top: 50px;
+}
+
+#volunteer-form100 {
   padding-top: 100px;
 }
 
