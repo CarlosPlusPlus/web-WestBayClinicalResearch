@@ -31,7 +31,7 @@
   <div class="container content">
     <div class="row bold center small-caps">
       <h1 id="featured-sponsors">
-        Our Current Trials
+        Enrolling Trials
       </h1>
     </div>
 
@@ -41,30 +41,20 @@
       </div>
 
       <div class="col-sm-6">
-        <div class="container content tile-row">
-          
-          <div class="row center">
-            <div class="col-sm-12 sponsor-tile">
-              <span>
-                Abbott Laboratories
-              </span>
-            </div>
+        <div class="container content tile-row padding-lr0">
+          <div class="row">
+            <%= link_to("/trial/information", "Heart Attack",
+                :class => "btn btn-grove-one btn-xlg btn-bold sponsor-tile") %>
           </div>
 
           <div class="row">
-            <div class="col-sm-12 sponsor-tile">
-              <span>
-                AmGen
-              </span>
-            </div>
+            <%= link_to("/trial/information", "Ulcerative Colitis",
+                :class => "btn btn-grove-one btn-xlg btn-bold sponsor-tile") %>
           </div>
-          
+
           <div class="row">
-            <div class="col-sm-12 sponsor-tile">
-              <span>
-                GlaxoSmithKline
-              </span>
-            </div>
+            <%= link_to("/trial/information", "Upcoming Trials",
+                :class => "btn btn-grove-one btn-xlg btn-bold sponsor-tile") %>
           </div>
         </div>
       </div>
