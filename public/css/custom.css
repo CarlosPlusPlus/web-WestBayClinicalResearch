@@ -658,6 +658,10 @@ div#social {
     display: none;
   }
 
+  .email {
+    font-size: 12px;
+  }
+
   #faq-questions {
     padding-top: 25px;
   }
