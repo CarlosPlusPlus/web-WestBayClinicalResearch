@@ -617,6 +617,27 @@ div#social {
 /* Page: MOBILE WEB */
 /********************/
 
+/* Disable Index Page Hover when Width <= 500px */
+
+@media screen and (min-width: 500px) {
+  .cta-button:hover {
+    background-color: #0431B4;
+    color: white;
+
+    box-shadow: inset 0 0 35px white;
+  }
+
+  .action-tile:hover {
+    transform:         scale(1.15);
+    -moz-transform:    scale(1.15);
+    -webkit-transform: scale(1.15);
+
+    box-shadow:         0 5px 25px #000;
+    -moz-box-shadow:    0 5px 25px #000;
+    -webkit-box-shadow: 0 5px 25px #000;
+  }
+}
+
 /* Adjust Spacing on all Trial Pages */
 
 @media screen and (max-width: 775px) {
@@ -636,25 +657,8 @@ div#social {
   #caduceus {
     display: none;
   }
-}
 
-/* Disable Index Page Hover */
-
-@media screen and (min-width: 500px) {
-  .cta-button:hover {
-    background-color: #0431B4;
-    color: white;
-
-    box-shadow: inset 0 0 35px white;
-  }
-
-  .action-tile:hover {
-    transform:         scale(1.15);
-    -moz-transform:    scale(1.15);
-    -webkit-transform: scale(1.15);
-
-    box-shadow:         0 5px 25px #000;
-    -moz-box-shadow:    0 5px 25px #000;
-    -webkit-box-shadow: 0 5px 25px #000;
+  #faq-questions {
+    padding-top: 25px;
   }
 }
