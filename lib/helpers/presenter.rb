@@ -31,7 +31,7 @@ module Sinatra
 
     # Thank You Page
     def thank_you_action(action)
-      respond = '<br><span class="tab">' + 
+      respond = '<br><span>' + 
                 'We will respond to you shortly.' +
                 '</span>'
 
@@ -39,6 +39,7 @@ module Sinatra
       (
         case action
         when 'contact','sponsor' then 'contacting us!</b>' + respond
+        when 'inquire'           then 'inquiring about an upcoming trial!</b>'
         when 'newsletter'        then 'subscribing to our newsletter!</b>'
         when 'volunteer'         then 'volunteering for a trial!</b>' + respond
         end
