@@ -9,7 +9,7 @@ Their website can be found at: **[www.westbayclinicalresearch.com](www.westbaycl
 This website was built with the following technologies:
 
 - **[Sinatra](www.sinatrarb.com)** back-end framework in the **[Ruby](www.ruby.org)** programming language.
-- **HTML5** with **[Twitter Bootstrap 3]()** for responsive layouts.
+- **HTML5** with **[Twitter Bootstrap 3](http://getbootstrap.com/)** for responsive layouts.
 - **CSS3** and **JavaScript** for front-end styling and content.
 - **Hubspot** form integration for data analysis and collection.
 - **Google Analytics** for traffic analysis and website tracking.
