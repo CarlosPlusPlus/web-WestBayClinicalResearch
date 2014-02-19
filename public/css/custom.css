@@ -5,10 +5,15 @@
 body {
   padding-top: 70px;
   color: black;
+  font-size: 15px;
 }
 
 a {
   color: #00008B;
+}
+
+ul.navbar-nav li {
+  font-size: 14px;
 }
 
 /*****************/
