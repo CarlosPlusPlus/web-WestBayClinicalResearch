@@ -9,6 +9,7 @@ gem 'sinatra-activerecord'
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 
+gem 'capistrano', '2.15.5'
 gem 'rake'
 
 group :development, :test do
